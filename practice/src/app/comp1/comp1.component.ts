@@ -7,7 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Comp1Component implements OnInit {
 
-  constructor() { }
+  appname = "Akshay";
+  toggleprop = false;
+  togglevalue = "unchanged"
+
+  testbinding = ""
+
+  toggleclick()
+  {
+    this.togglevalue="changed"
+  }
+
+  constructor() {
+
+    setTimeout(() => {
+      this.toggleprop=true;
+    }, 2000 );
+  
+   }
 
   ngOnInit(): void {
   }

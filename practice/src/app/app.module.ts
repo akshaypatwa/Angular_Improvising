@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Comp1Component } from './comp1/comp1.component';
 import { Comp2Component } from './comp2/comp2.component';
+import { AssignmentsComponent } from './assignments/assignments.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     Comp1Component,
-    Comp2Component
+    Comp2Component,
+    AssignmentsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
